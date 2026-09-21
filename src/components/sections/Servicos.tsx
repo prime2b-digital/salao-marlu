@@ -27,7 +27,7 @@ export function Servicos() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative block aspect-[4/5] overflow-hidden rounded-3xl"
+              className="group relative block aspect-[4/5] overflow-hidden rounded-3xl border border-gold/35 shadow-soft transition-colors duration-500 hover:border-gold"
             >
               <img
                 src={s.img}

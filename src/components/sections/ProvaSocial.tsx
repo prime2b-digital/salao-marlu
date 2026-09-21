@@ -4,6 +4,10 @@ import cliente1 from "@/assets/cliente-1.jpg.asset.json";
 import cliente2 from "@/assets/cliente-2.jpg.asset.json";
 import cliente3 from "@/assets/cliente-3.jpg.asset.json";
 import salao1 from "@/assets/salao-1.jpg.asset.json";
+import galeria1 from "@/assets/galeria-1.jpg.asset.json";
+import galeria2 from "@/assets/galeria-2.jpg.asset.json";
+import galeria3 from "@/assets/galeria-3.jpg.asset.json";
+import galeria4 from "@/assets/galeria-4.jpg.asset.json";
 import { CtaButton } from "../CtaButton";
 
 const depoimentos = [
@@ -54,6 +58,10 @@ const galeria = [
   { url: cliente1.url, alt: "Cliente do Salão Marlu" },
   { url: cliente2.url, alt: "Cliente do Salão Marlu" },
   { url: cliente3.url, alt: "Cliente do Salão Marlu" },
+  { url: galeria1.url, alt: "Clientes no Salão Marlu" },
+  { url: galeria2.url, alt: "Escova realizada no Salão Marlu" },
+  { url: galeria3.url, alt: "Clientes sendo atendidas no Salão Marlu" },
+  { url: galeria4.url, alt: "Corte e escova feitos no Salão Marlu" },
 ];
 
 function Estrelas() {
@@ -99,7 +107,7 @@ export function ProvaSocial() {
   };
 
   return (
-    <section className="bg-cream py-28 md:py-40">
+    <section className="bg-cream pb-28 pt-14 md:pb-40 md:pt-16">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
           <h2 className="text-4xl text-foreground md:text-5xl">O Que Nossas Clientes Dizem</h2>

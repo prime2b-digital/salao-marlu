@@ -9,7 +9,7 @@ const passos = [
 
 export function ComoFunciona() {
   return (
-    <section className="bg-cream py-28 md:py-40">
+    <section className="bg-cream pb-16 pt-28 md:pb-20 md:pt-40">
       <div className="mx-auto max-w-5xl px-6 text-center">
         <h2 className="text-4xl text-foreground md:text-5xl">Agendar no Marlu é Simples</h2>
         <p className="mt-4 text-muted-foreground">Em três passos você garante seu horário.</p>
