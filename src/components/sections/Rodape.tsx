@@ -1,14 +1,21 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import logo from "@/assets/logo.jpeg.asset.json";
+import logo from "@/assets/logo-preta.png";
 import { EMAIL, ENDERECO, TELEFONE, WHATSAPP_URL } from "@/lib/contato";
 import { WhatsappIcon } from "../WhatsappIcon";
 
 export function Rodape() {
   return (
-    <footer className="bg-background py-16">
+    <footer className="bg-background py-24">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-4">
         <div>
-          <img src={logo.url} alt="Salão Marlu" loading="lazy" className="w-40" />
+          <img
+            src={logo}
+            alt="Salão Marlu"
+            loading="lazy"
+            width={771}
+            height={254}
+            className="w-44"
+          />
         </div>
 
         <div>

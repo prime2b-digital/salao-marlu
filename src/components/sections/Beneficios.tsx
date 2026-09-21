@@ -25,12 +25,17 @@ const beneficios = [
 
 export function Beneficios() {
   return (
-    <section className="bg-background py-20 md:py-28">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 sm:grid-cols-2 lg:grid-cols-4">
+    <section className="bg-background py-28 md:py-40">
+      <div className="mx-auto grid max-w-6xl gap-6 px-6 sm:grid-cols-2 lg:grid-cols-4">
         {beneficios.map((b) => (
-          <div key={b.titulo} className="border-t border-border pt-8">
-            <b.icon className="h-7 w-7 text-gold" strokeWidth={1.2} />
-            <h3 className="mt-5 text-2xl text-foreground">{b.titulo}</h3>
+          <div
+            key={b.titulo}
+            className="rounded-3xl border border-border bg-card p-8 shadow-soft transition-transform duration-500 hover:-translate-y-1"
+          >
+            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gold">
+              <b.icon className="h-6 w-6 text-ink" strokeWidth={1.4} />
+            </div>
+            <h3 className="mt-6 text-2xl text-foreground">{b.titulo}</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{b.texto}</p>
           </div>
         ))}

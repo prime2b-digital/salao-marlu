@@ -22,7 +22,7 @@ export function CtaButton({
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-3 px-8 py-4 text-xs uppercase tracking-[0.25em] transition-colors duration-300 ${styles} ${className}`}
+      className={`inline-flex items-center justify-center gap-3 rounded-full px-8 py-4 text-xs uppercase tracking-[0.25em] transition-colors duration-300 ${styles} ${className}`}
     >
       <WhatsappIcon />
       {children}
