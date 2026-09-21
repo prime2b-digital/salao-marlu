@@ -12,7 +12,7 @@ const servicos = [
 
 export function Servicos() {
   return (
-    <section id="servicos" className="bg-ink py-20 md:py-28">
+    <section id="servicos" className="bg-ink py-28 md:py-40">
       <div className="mx-auto max-w-6xl px-6 text-center">
         <p className="eyebrow text-gold">Diversidade de serviços</p>
         <h2 className="mt-4 text-4xl text-cream md:text-5xl">Conheça os Serviços do Marlu</h2>
@@ -20,14 +20,14 @@ export function Servicos() {
           Do corte do dia a dia à transformação completa, cuidamos de você por inteiro.
         </p>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
           {servicos.map((s) => (
             <a
               key={s.nome}
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative block aspect-[4/5] overflow-hidden"
+              className="group relative block aspect-[4/5] overflow-hidden rounded-3xl"
             >
               <img
                 src={s.img}
@@ -37,7 +37,7 @@ export function Servicos() {
                 height={1280}
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 overlay-dark" />
+              <div className="absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink via-ink/70 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-6 text-left">
                 <span className="text-2xl text-cream">{s.nome}</span>
                 <span className="mt-2 block h-px w-10 bg-gold transition-all duration-500 group-hover:w-20" />
@@ -46,7 +46,7 @@ export function Servicos() {
           ))}
         </div>
 
-        <CtaButton className="mt-12">Quero Agendar</CtaButton>
+        <CtaButton className="mt-14">Quero Agendar</CtaButton>
       </div>
     </section>
   );

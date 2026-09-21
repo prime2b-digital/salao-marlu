@@ -99,7 +99,7 @@ export function ProvaSocial() {
   };
 
   return (
-    <section className="bg-cream py-20 md:py-28">
+    <section className="bg-cream py-28 md:py-40">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
           <h2 className="text-4xl text-foreground md:text-5xl">O Que Nossas Clientes Dizem</h2>
@@ -142,7 +142,7 @@ export function ProvaSocial() {
             {depoimentos.map((d) => (
               <article
                 key={d.nome}
-                className="w-[300px] shrink-0 snap-start rounded-lg bg-card p-5 shadow-soft"
+                className="w-[300px] shrink-0 snap-start rounded-3xl bg-card p-6 shadow-soft"
               >
                 <header className="flex items-center gap-3">
                   <div
@@ -176,7 +176,7 @@ export function ProvaSocial() {
               src={g.url}
               alt={g.alt}
               loading="lazy"
-              className="aspect-[3/4] w-full object-cover"
+              className="aspect-[3/4] w-full rounded-3xl object-cover"
             />
           ))}
         </div>

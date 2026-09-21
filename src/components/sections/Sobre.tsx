@@ -1,15 +1,17 @@
-import logo from "@/assets/logo.jpeg.asset.json";
+import sobreImg from "@/assets/sobre-salao.jpg";
 import { CtaButton } from "../CtaButton";
 
 export function Sobre() {
   return (
-    <section className="bg-ink py-20 md:py-28">
+    <section className="bg-ink py-28 md:py-40">
       <div className="mx-auto grid max-w-5xl items-center gap-12 px-6 md:grid-cols-2">
         <img
-          src={logo.url}
-          alt="Logotipo Salão Marlu"
+          src={sobreImg}
+          alt="Atendimento no Salão Marlu"
           loading="lazy"
-          className="mx-auto w-full max-w-sm"
+          width={1024}
+          height={1280}
+          className="mx-auto aspect-[4/5] w-full max-w-sm rounded-3xl object-cover shadow-soft"
         />
         <div>
           <h2 className="text-4xl text-cream md:text-5xl">Sobre o Salão Marlu</h2>
