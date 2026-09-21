@@ -107,7 +107,7 @@ export function ProvaSocial() {
   };
 
   return (
-    <section className="bg-cream py-28 md:py-40">
+    <section className="bg-cream pb-28 pt-14 md:pb-40 md:pt-16">
       <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
           <h2 className="text-4xl text-foreground md:text-5xl">O Que Nossas Clientes Dizem</h2>
