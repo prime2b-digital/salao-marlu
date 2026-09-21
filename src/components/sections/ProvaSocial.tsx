@@ -4,6 +4,10 @@ import cliente1 from "@/assets/cliente-1.jpg.asset.json";
 import cliente2 from "@/assets/cliente-2.jpg.asset.json";
 import cliente3 from "@/assets/cliente-3.jpg.asset.json";
 import salao1 from "@/assets/salao-1.jpg.asset.json";
+import galeria1 from "@/assets/galeria-1.jpg.asset.json";
+import galeria2 from "@/assets/galeria-2.jpg.asset.json";
+import galeria3 from "@/assets/galeria-3.jpg.asset.json";
+import galeria4 from "@/assets/galeria-4.jpg.asset.json";
 import { CtaButton } from "../CtaButton";
 
 const depoimentos = [
