@@ -22,7 +22,7 @@ export function ComoFunciona() {
             {passos.map((p, i) => (
               <div key={p.titulo} className="flex flex-col items-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gold shadow-soft ring-8 ring-cream">
-                  <p.icon className="h-6 w-6 text-ink" fill="currentColor" strokeWidth={1.2} />
+                  <p.icon className="h-6 w-6 text-ink" strokeWidth={1.6} />
                 </div>
                 <span className="eyebrow mt-5 text-muted-foreground">0{i + 1}</span>
                 <h3 className="mt-2 text-2xl text-foreground">{p.titulo}</h3>
