@@ -58,6 +58,10 @@ const galeria = [
   { url: cliente1.url, alt: "Cliente do Salão Marlu" },
   { url: cliente2.url, alt: "Cliente do Salão Marlu" },
   { url: cliente3.url, alt: "Cliente do Salão Marlu" },
+  { url: galeria1.url, alt: "Clientes no Salão Marlu" },
+  { url: galeria2.url, alt: "Escova realizada no Salão Marlu" },
+  { url: galeria3.url, alt: "Clientes sendo atendidas no Salão Marlu" },
+  { url: galeria4.url, alt: "Corte e escova feitos no Salão Marlu" },
 ];
 
 function Estrelas() {
