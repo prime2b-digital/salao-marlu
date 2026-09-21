@@ -1,24 +1,51 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/sections/Hero";
+import { Beneficios } from "@/components/sections/Beneficios";
+import { Servicos } from "@/components/sections/Servicos";
+import { ComoFunciona } from "@/components/sections/ComoFunciona";
+import { ProvaSocial } from "@/components/sections/ProvaSocial";
+import { Sobre } from "@/components/sections/Sobre";
+import { Rodape } from "@/components/sections/Rodape";
+import { BarraPrime } from "@/components/sections/BarraPrime";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      {
+        title: "Salão Marlu | Cabelo, Estética e Química em Rio Preto",
+      },
+      {
+        name: "description",
+        content:
+          "Salão de beleza em São José do Rio Preto: cabelo, estética e química em um só lugar. Agende seu horário pelo WhatsApp.",
+      },
+      {
+        property: "og:title",
+        content: "Salão Marlu | Cabelo, Estética e Química em Rio Preto",
+      },
+      {
+        property: "og:description",
+        content:
+          "Tudo o que você precisa para se sentir bem, com uma equipe preparada para cuidar de cada detalhe.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main>
+      <Hero />
+      <Beneficios />
+      <Servicos />
+      <ComoFunciona />
+      <ProvaSocial />
+      <Sobre />
+      <Rodape />
+      <BarraPrime />
+    </main>
   );
 }
