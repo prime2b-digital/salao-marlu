@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Beneficios } from "@/components/sections/Beneficios";
 import { Servicos } from "@/components/sections/Servicos";
 import { ComoFunciona } from "@/components/sections/ComoFunciona";
+import { Promocoes } from "@/components/sections/Promocoes";
 import { ProvaSocial } from "@/components/sections/ProvaSocial";
 import { Sobre } from "@/components/sections/Sobre";
 import { Rodape } from "@/components/sections/Rodape";
@@ -42,6 +43,7 @@ function Index() {
       <Beneficios />
       <Servicos />
       <ComoFunciona />
+      <Promocoes />
       <ProvaSocial />
       <Sobre />
       <Rodape />
