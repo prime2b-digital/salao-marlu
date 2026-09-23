@@ -1,4 +1,5 @@
-import sobreImg from "@/assets/sobre-salao.jpg";
+import sobreA from "@/assets/sobre-salao.png.asset.json";
+const sobreImg = sobreA.url;
 import { CtaButton } from "../CtaButton";
 
 export function Sobre() {
