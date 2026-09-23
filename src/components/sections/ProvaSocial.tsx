@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import cliente1 from "@/assets/cliente-1.jpg.asset.json";
 import cliente2 from "@/assets/cliente-2.jpg.asset.json";
 import cliente3 from "@/assets/cliente-3.jpg.asset.json";
-import salao1 from "@/assets/salao-1.jpg.asset.json";
 import galeria1 from "@/assets/galeria-1.jpg.asset.json";
 import galeria2 from "@/assets/galeria-2.jpg.asset.json";
 import galeria3 from "@/assets/galeria-3.jpg.asset.json";
 import galeria4 from "@/assets/galeria-4.jpg.asset.json";
+import espaco1 from "@/assets/espaco-1.png.asset.json";
 import { CtaButton } from "../CtaButton";
 
 const depoimentos = [
@@ -54,7 +54,7 @@ const depoimentos = [
 ];
 
 const galeria = [
-  { url: salao1.url, alt: "Atendimento no Salão Marlu" },
+  { url: espaco1.url, alt: "Espaço do Salão Marlu" },
   { url: cliente1.url, alt: "Cliente do Salão Marlu" },
   { url: cliente2.url, alt: "Cliente do Salão Marlu" },
   { url: cliente3.url, alt: "Cliente do Salão Marlu" },

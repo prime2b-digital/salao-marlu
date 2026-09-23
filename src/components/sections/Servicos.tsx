@@ -1,6 +1,7 @@
-import cabelo from "@/assets/servico-cabelo.jpg";
-import quimica from "@/assets/servico-quimica.jpg";
-import estetica from "@/assets/servico-estetica.jpg";
+import cabeloA from "@/assets/servico-cabelo.png.asset.json";
+import quimicaA from "@/assets/servico-quimica.png.asset.json";
+import esteticaA from "@/assets/servico-estetica.png.asset.json";
+const cabelo = cabeloA.url, quimica = quimicaA.url, estetica = esteticaA.url;
 import { WHATSAPP_URL } from "@/lib/contato";
 import { CtaButton } from "../CtaButton";
 
