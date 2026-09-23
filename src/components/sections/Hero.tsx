@@ -1,5 +1,4 @@
 import heroAsset from "@/assets/hero-salao.png.asset.json";
-import { Link } from "@tanstack/react-router";
 const heroBg = heroAsset.url;
 import logo from "@/assets/logo-transparente.png";
 import { CtaButton } from "../CtaButton";
@@ -29,7 +28,6 @@ export function Hero() {
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
           <CtaButton>Agende Seu Horário</CtaButton>
-          <Link to="/promocoes" className="rounded-full border border-gold px-7 py-3.5 text-sm uppercase tracking-widest text-gold transition-colors hover:bg-gold hover:text-ink">Ver Promoções</Link>
         </div>
       </div>
     </section>
