@@ -1,6 +1,7 @@
 import cabeloA from "@/assets/servico-cabelo.png.asset.json";
 import quimicaA from "@/assets/servico-quimica.png.asset.json";
 import esteticaA from "@/assets/servico-estetica.png.asset.json";
+import manicureA from "@/assets/servico-manicure.png.asset.json";
 const cabelo = cabeloA.url, quimica = quimicaA.url, estetica = esteticaA.url;
 import { WHATSAPP_URL } from "@/lib/contato";
 import { CtaButton } from "../CtaButton";
@@ -9,6 +10,7 @@ const servicos = [
   { nome: "Cabelo", img: cabelo },
   { nome: "Química", img: quimica },
   { nome: "Estética", img: estetica },
+  { nome: "Manicure", img: manicureA.url },
 ];
 
 export function Servicos() {
@@ -21,7 +23,7 @@ export function Servicos() {
           Do corte do dia a dia à transformação completa, cuidamos de você por inteiro.
         </p>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {servicos.map((s) => (
             <a
               key={s.nome}
