@@ -1,33 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Hero } from "@/components/sections/Hero";
-import { Beneficios } from "@/components/sections/Beneficios";
-import { Servicos } from "@/components/sections/Servicos";
-import { ComoFunciona } from "@/components/sections/ComoFunciona";
-import { Promocoes } from "@/components/sections/Promocoes";
-import { ProvaSocial } from "@/components/sections/ProvaSocial";
-import { Sobre } from "@/components/sections/Sobre";
-import { Rodape } from "@/components/sections/Rodape";
-import { BarraPrime } from "@/components/sections/BarraPrime";
+import { Header, Hero, Produtos, Servicos, Galeria, Sobre, Unidades, Rodape } from "@/components/sections/Lp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      {
-        title: "Salão Marlu | Cabelo, Estética e Química em Rio Preto",
-      },
+      { title: "Salão Marlu | Beleza, cuidado e experiência em Rio Preto" },
       {
         name: "description",
         content:
-          "Salão de beleza em São José do Rio Preto: cabelo, estética e química em um só lugar. Agende seu horário pelo WhatsApp.",
+          "Cabelo, cor, sobrancelhas, maquiagem, unha e estética em um só lugar em São José do Rio Preto. Agende pelo WhatsApp.",
       },
-      {
-        property: "og:title",
-        content: "Salão Marlu | Cabelo, Estética e Química em Rio Preto",
-      },
+      { property: "og:title", content: "Salão Marlu | Beleza, cuidado e experiência" },
       {
         property: "og:description",
-        content:
-          "Tudo o que você precisa para se sentir bem, com uma equipe preparada para cuidar de cada detalhe.",
+        content: "Cabelo, cor, sobrancelhas, maquiagem, unha e estética. Tudo em um só lugar.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -38,16 +24,17 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main>
-      <Hero />
-      <Beneficios />
-      <Servicos />
-      <ComoFunciona />
-      <Promocoes />
-      <ProvaSocial />
-      <Sobre />
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <Produtos />
+        <Servicos />
+        <Galeria />
+        <Unidades />
+        <Sobre />
+      </main>
       <Rodape />
-      <BarraPrime />
-    </main>
+    </>
   );
 }
