@@ -142,12 +142,12 @@ export function Servicos() {
           </h2>
           <LinkSeta href={WHATSAPP_URL}>Agendar</LinkSeta>
         </div>
-        <div className="mt-10 grid grid-cols-2 gap-2 md:grid-cols-4 md:grid-rows-2">
+        <div className="mt-10 grid grid-cols-2 gap-2 md:grid-cols-4 md:grid-rows-[230px_230px]">
           <CardServico img={corCabelo.url} nome="Cor e luzes" texto="Loiros, iluminados e coloração com acabamento de salão." className="col-span-2 aspect-square md:row-span-2 md:aspect-auto" />
-          <CardServico img={corte.url} nome="Corte" className="aspect-[4/3]" />
-          <CardServico img={maquiagem.url} nome="Maquiagem" className="aspect-[4/3]" />
-          <CardServico img={manicure.url} nome="Manicure" className="aspect-[4/3]" />
-          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex aspect-[4/3] flex-col justify-end bg-accent p-4 md:p-5">
+          <CardServico img={corte.url} nome="Corte" className="aspect-[4/3] md:aspect-auto" />
+          <CardServico img={maquiagem.url} nome="Maquiagem" className="aspect-[4/3] md:aspect-auto" />
+          <CardServico img={manicure.url} nome="Manicure" className="aspect-[4/3] md:aspect-auto" />
+          <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="flex aspect-[4/3] md:aspect-auto flex-col justify-end bg-accent p-4 md:p-5">
             <span className="text-sm text-accent-foreground md:text-lg">Estética</span>
             <p className="mt-1 text-xs text-accent-foreground/80">Cuidados com a pele e bem-estar.</p>
           </a>
