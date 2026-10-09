@@ -3,29 +3,43 @@ import { WHATSAPP_URL } from "@/lib/contato";
 
 export function CtaButton({
   children,
-  variant = "gold",
+  variant = "solid",
+  href = WHATSAPP_URL,
+  icon = true,
   className = "",
 }: {
   children: React.ReactNode;
-  variant?: "gold" | "outline" | "dark";
+  variant?: "solid" | "outline" | "gold" | "dark";
+  href?: string;
+  icon?: boolean;
   className?: string;
 }) {
-  const styles = {
-    gold: "bg-gold text-ink hover:bg-gold-soft",
-    outline:
-      "border border-gold/70 text-gold hover:bg-gold hover:text-ink bg-transparent",
-    dark: "bg-ink text-cream hover:bg-ink/85",
-  }[variant];
-
+  const styles =
+    variant === "outline"
+      ? "border border-foreground/25 text-foreground hover:bg-foreground/5"
+      : "bg-primary text-primary-foreground hover:bg-primary/90";
   return (
     <a
-      href={WHATSAPP_URL}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`inline-flex items-center justify-center gap-3 rounded-full px-8 py-4 text-xs uppercase tracking-[0.25em] transition-colors duration-300 ${styles} ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-sm px-6 py-3.5 text-[0.68rem] font-semibold uppercase tracking-[0.2em] transition-colors ${styles} ${className}`}
     >
-      <WhatsappIcon />
+      {icon && <WhatsappIcon />}
       {children}
+    </a>
+  );
+}
+
+export function LinkSeta({ href, children }: { href: string; children: React.ReactNode }) {
+  const external = href.startsWith("http");
+  return (
+    <a
+      href={href}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      className="inline-flex items-center gap-2 border-b border-foreground/30 pb-1 text-sm text-foreground transition-colors hover:border-foreground"
+    >
+      {children} <span aria-hidden>→</span>
     </a>
   );
 }
