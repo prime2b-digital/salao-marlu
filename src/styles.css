@@ -33,6 +33,7 @@
   --color-ink: var(--ink);
   --color-cream: var(--cream);
   --color-whatsapp: var(--whatsapp);
+  --color-banner: var(--banner);
   --font-display: "Montserrat", system-ui, sans-serif;
   --font-sans: "Montserrat", system-ui, sans-serif;
 }
@@ -62,6 +63,7 @@
   --gold-soft: oklch(0.88 0.05 85);
   --ink: oklch(0.14 0.005 60);
   --cream: oklch(0.96 0.012 85);
+  --banner: oklch(0.86 0.04 55);
   --whatsapp: oklch(0.62 0.16 150);
   --gradient-overlay: linear-gradient(
     180deg,

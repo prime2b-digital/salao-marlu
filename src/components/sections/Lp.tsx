@@ -11,6 +11,8 @@ import corte from "@/assets/lp-Corte.png.asset.json";
 import maquiagem from "@/assets/lp-Maquiagem.png.asset.json";
 import manicure from "@/assets/lp-Manicure.png.asset.json";
 import cabelo1 from "@/assets/lp-Cabelo.png.asset.json";
+import cabelo3 from "@/assets/lp-cabelo3.png.asset.json";
+import cabelo1b from "@/assets/lp-cabelo1b.png.asset.json";
 import galeria1 from "@/assets/galeria-1.jpg.asset.json";
 import galeria2 from "@/assets/galeria-2.jpg.asset.json";
 import galeria4 from "@/assets/galeria-4.jpg.asset.json";
@@ -104,6 +106,7 @@ export function Produtos() {
         <source media="(min-width: 768px)" srcSet={bannerD.url} />
         <img src={bannerM.url} alt="Produtos Pure Orgânico" className="absolute inset-0 h-full w-full object-cover object-bottom md:object-center" />
       </picture>
+      <div className="absolute inset-0 hidden bg-gradient-to-r from-banner to-50% md:block" />
       <div className="relative mx-auto flex min-h-[640px] max-w-6xl px-6 py-20 md:min-h-[520px] md:items-center">
         <div className="max-w-sm md:max-w-md">
           <img src={pureLogo.url} alt="Pure Orgânico" width={480} height={178} className="h-16 w-auto md:h-20" />
@@ -158,14 +161,14 @@ export function Servicos() {
 }
 
 export function Galeria() {
-  const fotos = [cabelo1.url, corCabelo.url, galeria2.url, galeria1.url];
+  const fotos = [cabelo1.url, cabelo1b.url, cabelo3.url, corCabelo.url, galeria2.url, galeria1.url];
   return (
     <section id="galeria" className="scroll-mt-16 bg-background pb-24">
       <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-3xl md:text-4xl">
           Nosso <strong className="font-bold">Trabalho</strong>
         </h2>
-        <div className="mt-10 grid grid-cols-2 gap-2 md:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-2 md:grid-cols-3">
           {fotos.map((f, i) => (
             <img key={i} src={f} alt="Trabalho do Salão Marlu" loading="lazy" className="aspect-[3/4] w-full object-cover" />
           ))}
