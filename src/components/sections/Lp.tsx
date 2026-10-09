@@ -122,7 +122,7 @@ export function Produtos() {
 function CardServico({ img, nome, className = "", texto }: { img: string; nome: string; className?: string; texto?: string }) {
   return (
     <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className={`group relative block overflow-hidden ${className}`}>
-      <img src={img} alt={nome} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
+      <img src={img} alt={nome} loading="lazy" className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-105" />
       <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-foreground/70 to-transparent" />
       <div className="absolute bottom-0 p-4 md:p-5">
         <span className="text-sm text-primary-foreground md:text-lg">{nome}</span>
