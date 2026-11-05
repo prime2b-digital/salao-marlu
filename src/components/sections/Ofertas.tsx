@@ -1,11 +1,15 @@
 import peMao from "@/assets/promocao-pe-mao-escova.jpg.asset.json";
 import coloracao from "@/assets/promocao-coloracao-escova.jpg.asset.json";
 import maoOuPe from "@/assets/promocao-mao-ou-pe-escova.jpg.asset.json";
+import esmaltacaoGel from "@/assets/promocao-esmaltacao-gel.jpeg.asset.json";
+import tratamentoKerastase from "@/assets/promocao-tratamento-kerastase.jpeg.asset.json";
 
 const imagens = [
   { src: peMao.url, alt: "Promoção Salão Marlu: pacote pé e mão com escova lisa" },
   { src: coloracao.url, alt: "Promoção Marlu Damha: combo coloração e escova" },
   { src: maoOuPe.url, alt: "Promoção Salão Marlu: pacote mão ou pé com escova lisa" },
+  { src: esmaltacaoGel.url, alt: "Promoção Marlu Espaço Damha: dias de esmaltação em gel" },
+  { src: tratamentoKerastase.url, alt: "Promoção Salão Marlu: tratamento capilar Kérastase Gloss Absolu" },
 ];
 
 export function Ofertas() {
@@ -15,7 +19,7 @@ export function Ofertas() {
         <h2 id="ofertas-titulo" className="text-3xl md:text-4xl">
           Nossas <strong className="font-bold">Promoções</strong>
         </h2>
-        <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 items-start gap-6 md:grid-cols-3">
           {imagens.map((imagem) => (
             <img
               key={imagem.src}
