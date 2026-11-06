@@ -3,13 +3,12 @@ import coloracao from "@/assets/promocao-coloracao-escova.jpg.asset.json";
 import maoOuPe from "@/assets/promocao-mao-ou-pe-escova.jpg.asset.json";
 import esmaltacaoGel from "@/assets/promocao-esmaltacao-gel.jpeg.asset.json";
 import tratamentoKerastase from "@/assets/promocao-tratamento-kerastase.jpeg.asset.json";
+import Promo10 from "@/assets/Promo10.png";
+import Promo11 from "@/assets/Promo11.jpeg";
 
 const imagens = [
-  { src: peMao.url, alt: "Promoção Salão Marlu: pacote pé e mão com escova lisa" },
-  { src: coloracao.url, alt: "Promoção Marlu Damha: combo coloração e escova" },
-  { src: maoOuPe.url, alt: "Promoção Salão Marlu: pacote mão ou pé com escova lisa" },
-  { src: esmaltacaoGel.url, alt: "Promoção Marlu Espaço Damha: dias de esmaltação em gel" },
-  { src: tratamentoKerastase.url, alt: "Promoção Salão Marlu: tratamento capilar Kérastase Gloss Absolu" },
+  { src: Promo10, alt: "Promoção Salão Marlu" },
+  { src: Promo11, alt: "Promoção Salão Marlu 2" },
 ];
 
 export function Ofertas() {
